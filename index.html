@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Salgados da Regina (Nina)</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    }
+
+    * {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #FFD700;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    max-height: 200px ;
+}
+
+p {
+    text-align: justify;
+    margin: 10px 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+}
+
+#about h2 {
+    margin-top: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul li:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+.two-column-list {
+    list-style-type: none; /* Remove os pontos da lista */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens da lista se distribuam em várias linhas */
+    gap: 20px; /* Espaçamento entre os itens da lista */
+    text-align: center;
+}
+
+.two-column-list li {
+    width: calc(50% - 20px); /* Cada item da lista ocupa metade do espaço disponível menos o gap */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+@media (max-width: 600px) {
+    .two-column-list li {
+        width: 100%; /* Em telas menores, cada item ocupa 100% da largura */
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
+
+#contact, p {
+    text-align: center;
+}
+
+#videos > h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salgados da Regina (Nina)</h1>
+        <p>Os melhores salgados da cidade, feitos com amor e ingredientes de qualidade!</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>Somos especialistas em fazer salgados deliciosos para todas as ocasiões. Venha experimentar nossas coxinhas, quibes, esfihas e muito mais!</p>
+        </section>
+        <section id="products">
+            <h2>Nossos Produtos</h2>
+            <ul class="two-column-list">
+                <li>Croquete de Carne</li>
+                <li>Salsichinha empanada</li>
+                <li>Coxinha de Frango</li>
+                <li>Quibe de Carne</li>
+                <li>Esfiha de Queijo</li>
+                <li>Bolinha de Queijo</li>
+            </ul>
+        </section>
+        <section id="videos">
+            <h2>Veja Nossos Produtos em Ação</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zSyaqsQTDlQ?si=4virArJExkA4Efkv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lAJKD3uqK5s?si=Saxibs7D80ZU4Hd5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Quer fazer um pedido ou tirar dúvidas? Fale conosco no WhatsApp!</p>
+            <a href="https://wa.me/5513978238633" target="_blank" rel="noopener" class="whatsapp-link">Clique aqui para falar no WhatsApp</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Salgados da Regina (Nina). Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
